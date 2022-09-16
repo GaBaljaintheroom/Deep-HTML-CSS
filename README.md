@@ -1,5 +1,27 @@
 # Deep-HTML-CSS
 
+<h2>Practice04번 - 
+그리드 레이아웃을 반응형 웹으로 크기에 따라 aside의 위치와 메뉴, nav바가 달라짐</h2>
+
+
+<h3> style04.css - 주요 코드</h3>
+
+1. 반응형 웹 페이지 
+    - 스마트폰, pc에 적합하게 @media로 최대 너비와 최소 너비를 나눔
+2. 화면이 클 때는, menu가 안보임 
+    - #menu{ display: none;}
+   aside, main의 너비 및 길이를 지정  
+    -  grid-template-columns: 200px 1fr;
+    -  grid-row: 2/3;
+   header, footer가 grid-column속성으로 너비를 꽉채움
+    - grid-column: 1/-1;
+3. 화면이 작을 때는, nav바 안보임
+    - nav{ display: none; }
+4. menu에 마우스 갔다대면 nav바 보임
+   - #menu:hover + nav{ display: inherit; }
+5. nav바 오른쪽으로 블록 형식으로 정렬
+
+
 <h2>Practice05번 - 
 반응형 웹으로 사진은 어느 정도만 넘겨도 자동으로 넘겨지는 기능</h2>
 
