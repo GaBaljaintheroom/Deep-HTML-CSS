@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  nav{
+    display: none;
+  }
+  #menu:hover + nav{
+    display: inherit;
+  }
+  nav li{
+    display: block;
+    text-align: right;
+    padding: 0.5em 0;
+  }
+}
+
+@media (min-width: 768px){
+  #menu{
+    display: none;
+  }
+  #wrapper{
+    grid-template-columns: 200px 1fr;
+    grid-row: 2/3;
+  }
+  header, footer{
+    grid-column: 1/-1;
+  }
+}
