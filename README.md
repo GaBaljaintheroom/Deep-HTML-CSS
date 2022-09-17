@@ -1,5 +1,30 @@
 # Deep-HTML-CSS
 
+
+<h2>Practice03번 - 변형과 애니메이션</h2>
+
+
+<h3> style03.css - 주요 코드</h3>
+
+1. 마우스 커서를 올려 넣을시 색 및 가장자리 자연스럽게 변화
+    - transition 1s;
+2. 마우스 커서를 올려 넣을시 박스의 크기가 순간적으로 커졌다 되돌아옴
+    - @keyframes --> transform: scale();{요소를 확대 축소}
+3. 오른쪽으로 파란박스 계속 이동 
+    - transform: skeywX(-30deg) 요소를 비튼다
+    - animation-duration: 2s;   애니매이션 가동 시간 지정
+    - animation-timing-function: linear;    동일한 속도로 애니매이션 가동
+    - animation-iteration-count: infinite;  애니매이션 횟수 무한반복
+
+<b>transiton 속성</b>
+
+CSS 값이 달라질 때 요소에 어떤 효과로 반영될지 지정합니다.
+속성, 지속시간, 시간함수, 지연시간 순으로 값을 넣을 수 있습니다.
+
+<b>@keyframes 속성</b>
+
+개발자가 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 키프레임들을 설정함으로써 CSS 애니메이션 과정의 중간 절차를 제어할 수 있게 합니다. (from -> 50% -> to)
+
 <h2>Practice04번 - 
 그리드 레이아웃을 반응형 웹으로 크기에 따라 aside의 위치와 메뉴, nav바가 달라짐</h2>
 
