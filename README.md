@@ -1,4 +1,65 @@
 # Deep-HTML-CSS
+
+<h2>Practice01번 - 플렉스 레이아웃</h2>
+
+
+<h3> style01.css - 주요 코드</h3>
+
+1. flex 부모 속성
+
+<b>display - flex</b>
+
+플렉스 방식으로 자식 요소들을 배치하게 됩니다.
+inline-flex는 해당 컨테니어 요소를 인라인으로 만든다는 차이가 있습니다.
+
+<b>flex-direction</b>
+
+내부 요소(아이템)들을 어느 축(가로 또는 세로)을
+이 값에 따라 justify-content, align-items, align-content 등의
+속성들이 작용할 방향이 결정됩니다.
+
+<b>flex-wrap</b>
+
+내부 요소의 갯수 X 길이가 컨테이너를 넘어갈 때 이들을
+여러 줄에 걸쳐 나열할지 여부를 정합니다.
+
+<b>justify-content</b>
+
+메인 축에서 아이템들을 정렬할 방식을 정합니다.
+flex-start(end)는 row(column)-reverse의 영향을 받는다는 점에서
+start(end)와 다릅니다. flex-가 붙은 것을 사용하세요.
+
+<b>align-items, align-content</b>
+
+수직 축(메인 축의 반대)에서 아이템들을 정렬할 방식을
+정합니다. wrap으로 아이템이 여러 줄이 되면 align-content를
+사용해서 보다 다양한 방식으로 정렬할 수 있습니다.
+
+<b>gap</b>
+
+아이템간에 간격을 줄 수 있으며 두 개의 값을 넣어서
+가로 간격과 세로 간격을 다르게 지정하는 것도 가능합니다.
+
+<hr>
+2. flex 자식 요소 속성 - flex 컨테이너 안 아이템의 속성들
+
+<b>flex-basis</b>
+
+메인 축상의 길이로, 컨테이너의 flex-direction 값에
+따라 너비 또는 높이값으로 작용합니다. 기본값은 auto입니다.
+
+<b>flex-grow</b>
+
+빈 공간을 채울지 여부, 그리고 채울 시 다른 아이템들의
+동 속성값에 비례해서 공백을 나눠갖습니다. 기본값은 0 입니다.
+
+<b>flex-shrink</b>
+
+전체 공간이 부족할 때, 해당 아이템의 길이가
+컨텐츠의 너비 또는 flex-basis로 지정한 값보다 작아질 수 있을지를
+지정합니다. 기본값은 1이며, 증가할수록 길이가 많이 줄어듭니다.
+
+
 <h2>Practice02번 - 그리드 레이아웃</h2>
 
 
