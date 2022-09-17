@@ -1,0 +1,43 @@
+button._1:hover{
+  border-radius: 5em;
+  background-color: blueviolet;
+  transition: 1s;
+}
+
+button._2:hover{
+  animation: up-down 0.2s;
+}
+
+@keyframes up-down{
+
+  from{
+    transform: scale(100%);
+  }
+
+  50%{
+    transform: scale(105%);
+  }
+
+  to{
+    transform: scale(100%);
+  }
+}
+
+#loading>div{
+  transform: skewX(-30deg);
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes move{
+  from{
+    left: -600px;
+  }
+  to{
+    left: 0px;
+  }
+
+}
