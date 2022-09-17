@@ -96,8 +96,7 @@ th {
 address {
   font-style: inherit;
 }
-
-/* 웹 접근성 향상 */
+/* 웹 접근성 */
 .sr-only {
   position: absolute;
   width: 1px;
