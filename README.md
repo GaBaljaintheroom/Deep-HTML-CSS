@@ -1,5 +1,17 @@
 # Deep-HTML-CSS
+<h2>Practice02번 - 그리드 레이아웃</h2>
 
+
+<h3> style02.css - 주요 코드</h3>
+
+1. grid-template 속성으로 행과 열 사이즈 나누기(부모 적용 속성)
+    - grid-template-columns: 200px 1fr 300px;
+    - grid-template-rows: 80px 200px auto 200px;
+2. 자식 요소들 사이즈 정하기
+    - grid-column: 1/-1;
+    - grid-row: 2/4;
+    
+<i>크롬 개발자 도구로 grid 속성확인해보며 코딩하기</i>
 
 <h2>Practice03번 - 변형과 애니메이션</h2>
 
