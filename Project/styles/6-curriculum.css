@@ -48,34 +48,6 @@
   position: absolute;
 }
 
-.curriculum__progress::after{
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  background-color: var(--color-sub);
-  width: 0;
-  height: 8px;
-  transform: all 1s;
-}
-
-.curriculum__list li:hover::before{
-  background-color: var(--color-sub);
-}
-.curriculum__list li:nth-child(2):hover ~ .curriculum__progress::after{
-  width: 200px;
-}
-.curriculum__list li:nth-child(3):hover~.curriculum__progress::after {
-  width: 400px;
-}
-.curriculum__list li:nth-child(4):hover~.curriculum__progress::after {
-  width: 600px;
-}
-.curriculum__list li:nth-child(5):hover~.curriculum__progress::after {
-  width: 800px;
-}
-.curriculum__list li:nth-child(6):hover~.curriculum__progress::after {
-  width: 1000px;
-}
 
 @media (max-width: 768px) {
   .curriculum__list{
@@ -127,6 +99,41 @@
     width: 1000px;
     height: 8px;
     background-color: rgba(255,255,255,0.1);
+  }
+
+  .curriculum__progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-sub);
+    width: 0;
+    height: 8px;
+    transform: all 1s;
+  }
+
+  .curriculum__list li:hover::before {
+    background-color: var(--color-sub);
+  }
+
+  .curriculum__list li:nth-child(2):hover~.curriculum__progress::after {
+    width: 200px;
+  }
+
+  .curriculum__list li:nth-child(3):hover~.curriculum__progress::after {
+    width: 400px;
+  }
+
+  .curriculum__list li:nth-child(4):hover~.curriculum__progress::after {
+    width: 600px;
+  }
+
+  .curriculum__list li:nth-child(5):hover~.curriculum__progress::after {
+    width: 800px;
+  }
+  
+  .curriculum__list li:nth-child(6):hover~.curriculum__progress::after {
+    width: 1000px;
   }
 
 }
